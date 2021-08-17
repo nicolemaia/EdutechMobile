@@ -6,7 +6,7 @@
 
         document.write("<br>");
         document.write("<br>");
-      
+
 }
 
 function mostra(frase) {
@@ -20,10 +20,13 @@ function calculaImc(altura, peso) {
 
     var imc = peso / (altura * altura);
 mostra ("O imc calculado é " + imc);
-  
+    return imc;
 }
 
-calculaImc(1.71, 73);
-calculaImc(1.72, 68);
-  
+var imcFlavio = calculaImc(1.71, 73);
+var imcAmigo = calculaImc(1.72, 68);
+
+mostra(imcFlavio);
+mostra(imcAmigo);
+
 </script>
